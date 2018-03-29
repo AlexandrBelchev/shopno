@@ -68,7 +68,25 @@ html(lang='en')
                         br
                         span.header__title--attention Agency
                         |  CORPORATE SHOPNO Theme
-                    button.header__button Contact us
+                    a.popup-modal.header__button(href='#test-modal') Contact us
+                    #test-modal.white-popup-block.mfp-hide
+                        .contact__item.contact__item--55
+                            form.form
+                                .form__control
+                                    input.form__input(type='text' required name='name' value='' autocomplete='off')
+                                    label.form__label.form__label--required Name
+                                .form__control
+                                    input.form__input(type='text' required name='subject' value='' autocomplete='off')
+                                    label.form__label.form__label--required Subject
+                                .form__control
+                                    input.form__input(type='email' required name='email' value='' autocomplete='off')
+                                    label.form__label.form__label--required Email
+                                .form__control
+                                    textarea.form__textarea(required)
+                                    label.form__label.form__label--required Message
+                                input.form__submit(type='submit' value='Send message' name='text')
+                        a.popup-modal-dismiss(href='#')
+                            i.icon-close
                     .header__image-wrapper
                         img(src="./img/juice1.png", alt="juice")
         section.about

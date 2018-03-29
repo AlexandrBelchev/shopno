@@ -327,6 +327,23 @@ section {
 .mobile__item:nth-child(3) {
   top: 16px;
 }
+.white-popup-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.white-popup-block .contact__item {
+  background-color: #021623;
+  max-width: 510px;
+}
+.white-popup-block .icon-close {
+  color: #fff;
+}
 @media (min-width: 480px) {
   .header__title {
     font-size: 42px;
