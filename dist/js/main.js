@@ -60,7 +60,20 @@ $(document).ready(function() {
         }
     });
 });
+//init modal
 
+$(function () {
+    $('.popup-modal').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true
+    });
+    $(document).on('click', '.popup-modal-dismiss', function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+});
 // read more (services)
 window.onload=function() {
     document.querySelector(".services__more-button").onclick=function() {
@@ -76,10 +89,10 @@ window.onload=function() {
 
 
 // scroll to
-    $('.menu__link').click(function() {
-        var href = $(this).attr("href");
-        $('html, body').animate({
-            scrollTop: $(href).offset().top
-        }, 1000);
-        return false;
-    });
+$('.menu__link').click(function() {
+    var href = $(this).attr("href");
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, 1000);
+    return false;
+});

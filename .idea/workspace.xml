@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d89376c-b4ae-4643-9bfa-cc8a752ee007" name="Default" comment="" />
+    <list default="true" id="0d89376c-b4ae-4643-9bfa-cc8a752ee007" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +56,16 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="3" column="15321" lean-forward="false" selection-start-line="3" selection-start-column="15321" selection-end-line="3" selection-end-column="15321" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="488">
               <caret line="3" column="17303" lean-forward="false" selection-start-line="3" selection-start-column="17303" selection-end-line="3" selection-end-column="17303" />
               <folding />
@@ -61,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.styl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/stylus/header.styl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -90,6 +102,7 @@
         <option value="$PROJECT_DIR$/dist/css/stylesheet.css" />
         <option value="$PROJECT_DIR$/app/index.pug" />
         <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -156,6 +169,12 @@
             <path>
               <item name="shopno2" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopno2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index.pug" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="shopno2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopno2" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -202,12 +221,12 @@
       <updated>1522347864684</updated>
       <workItem from="1522347866219" duration="1168000" />
       <workItem from="1522351336320" duration="439000" />
-      <workItem from="1522354620239" duration="371000" />
+      <workItem from="1522354620239" duration="443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1978000" />
+    <option name="totallyTimeSpent" value="2050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -259,14 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="3" column="17303" lean-forward="false" selection-start-line="3" selection-start-column="17303" selection-end-line="3" selection-end-column="17303" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -303,6 +314,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="136" column="16" lean-forward="true" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="3" column="15321" lean-forward="false" selection-start-line="3" selection-start-column="15321" selection-end-line="3" selection-end-column="15321" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="3" column="17303" lean-forward="false" selection-start-line="3" selection-start-column="17303" selection-end-line="3" selection-end-column="17303" />
           <folding />
         </state>
       </provider>
