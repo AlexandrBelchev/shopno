@@ -1,0 +1,71 @@
+.company .row {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.company__item {
+  width: 50%;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.company__item img {
+  max-width: 100%;
+}
+@media (min-width: 480px) {
+  .company__item {
+    width: 33.33%;
+  }
+}
+@media (min-width: 960px) {
+  .company__item {
+    width: 16.6%;
+  }
+}
+/*
+//company
+
+.company
+  .row
+    justify-content space-between
+    flex-direction row
+    flex-wrap wrap
+  &__item
+    width 50%
+    margin 20px 0
+    display flex
+    align-items center
+    justify-content center
+    img
+      max-width 100%
+
+@media (min-width: 480px)
+  .company
+    &__item
+      width 33.33%
+@media (min-width: 960px)
+  .company
+    &__item
+      width auto
+    .row
+      &:nth-child(1)
+        justify-content space-around*/

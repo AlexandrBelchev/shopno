@@ -1,0 +1,476 @@
+doctype html
+include includes/menu.pug
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        meta(name='description' content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s')
+        meta(name='title' content='Shopno')
+        meta(name='keywords' content='shopno, SHOPNO, Shopno, shop')
+        meta(name='og:title' content='Shopno')
+        meta(name='og:description' content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s')
+        link(rel='stylesheet' href='css/stylesheet.css')
+        link(rel='stylesheet', type='text/css', href='libs/slick/slick.css')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Merriweather:400,700')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:400,700')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Raleway:400')
+        link(rel='stylesheet', href='libs/magnific-popup/dist/magnific-popup.css')
+        title shopno
+    body
+        header.header
+            .container
+                .header__wrapper
+                    a.header__link.link(href="") Sh
+                        span.link__letter o
+                        |pno
+                    nav
+                        -
+                            let menus = [
+                                {
+                                link: '.about',
+                                text: 'About us'
+                                },
+                                {
+                                link: '.work',
+                                text: 'Works'
+                                },
+                                {
+                                link: '.services',
+                                text: 'Services'
+                                },
+                                {
+                                link: '.review',
+                                text: 'Reviews'
+                                },
+                                {
+                                link: '.contact',
+                                text: 'Contacts'
+                                }
+                            ]
+                        .header__mobile.mobile
+                            span.mobile__item
+                            span.mobile__item
+                            span.mobile__item
+                        ul.header__menu.menu
+                            +menu
+                        .header__sidebar.sidebar
+                            .sidebar__wrapper
+                                .sidebar__close
+                                    span.sidebar__item.mobile__item
+                                    span.sidebar__item.mobile__item
+                                ul.menu--mobile.menu
+                                    +menu
+                .header__content
+                    h1.header__title Say Hello to
+                        | &nbsp;
+                        span.header__title--attention SHOPNO!
+                        br
+                        span.header__title--attention Agency
+                        |  CORPORATE SHOPNO Theme
+                    button.header__button Contact us
+                    .header__image-wrapper
+                        img(src="./img/juice1.png", alt="juice")
+        section.about
+            .container
+                .row
+                    h2.section__title About us
+                    span.section__subtitle Lorem ipsum dolor sit amet event landing template
+                    .about__content.content
+                        .about__item
+                            .slider-one
+                                -for(let i = 0; i < 3; i++)
+                                    img(src="./img/about-1.png", alt="")
+                        .about__item
+                            h3.about__item__title We Actually Do amazing works
+                            p.about__item__text A visual approach is an approach to a runway at an airport
+                                |conducted under instrument flight rules. The pilot must at all
+                                |times have either the airport or the preceding aircraft in approach
+                                |correct sight. conducted under instrument flight rules. The pilot must at all times.
+                            p.about__item__text Preceding aircraft in approach correct sight. conducted under instrument flight rules.
+                            h3.about__item__title Why we are the great?
+                            p.about__item__text A visual approach is an approach to a runway at an airport
+                                |conducted under instrument flight rules.
+                                |The preceding aircraft in approach correct sight.
+        section.work
+            .container
+                .row
+                    h2.section__title Featured works
+                    span.section__subtitle Lorem ipsum dolor sit amet event landing template
+                    .work__content.content
+                        -
+                            let work__items= [
+                                {
+                                    preview:'./img/work-1.png',
+                                    img:'./img/works-1.png'
+                                },
+                                {
+                                    preview:'./img/work-2.png',
+                                    img:'./img/works-2.png'
+                                },
+                                {
+                                    preview:'./img/work-3.png',
+                                    img:'./img/works-3.png'
+                                },
+                                {
+                                    preview:'./img/work-4.png',
+                                    img:'./img/works-4.png'
+                                },
+                                {
+                                    preview:'./img/work-5.png',
+                                    img:'./img/works-5.png'
+                                },
+                                {
+                                    preview:'./img/work-6.png',
+                                    img:'./img/works-6.png'
+                                }
+                            ]
+                        each item, i in work__items
+                            .work__item
+                                a(href=item.img).image__link
+                                    img(src=item.preview, alt="")
+        section.services
+            .container
+                .row
+                    h2.section__title Our services
+                    span.section__subtitle Lorem ipsum dolor sit amet event landing template
+                    .services__content.content
+                        .services__item.services__item--60
+                            .services__more.more
+                                .more__wrapper
+                                    .services__title.services__title--more
+                                        h3 Designing is The CooL LOVE FOR.
+                                    .services__text.services__text--more
+                                        p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                                        a.more__close.services__button
+                                            i.icon-close
+                            .services__item--overlay
+                            .services__img-wrapper
+                                img(src='./img/services-1.png' alt='')
+                            .services__info
+                                .services__title
+                                    h3 Designing is The CooL LOVE FOR.
+                                .services__text
+                                    p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                            a.services__more-button.services__button Know more
+                                    i.icon-thin-arrow-right
+                        .services__item.services__item--40
+                            .services__more.more
+                                .more__wrapper
+                                    .services__title.services__title--more
+                                        h3 Designing is The CooL LOVE FOR.
+                                    .services__text.services__text--more
+                                        p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                                        a.services__more-close.services__button
+                                            i.icon-close
+                            .services__item--overlay
+                            .services__img-wrapper
+                                img(src='./img/services-2.png' alt='')
+                            .services__info
+                                .services__title
+                                    h3 cool psd Design
+                                .services__text
+                                    p Our most popular service is our we know that sometimes it’s something and you middle most..
+                            a.services__more-button.services__button Know more
+                                    i.icon-thin-arrow-right
+                        .services__item.services__item--60
+                            .services__item--overlay
+                            .services__img-wrapper
+                                img(src='./img/services-3.png' alt='')
+                            .services__info
+                                .services__title
+                                    h3 Designing is The Cool
+                                .services__text
+                                    p Our most popular service is our Virtual Receptionist. We know that ...
+                            a.services__more-button.services__button Know more
+                                    i.icon-thin-arrow-right
+                        .services__item.services__item--40
+                            .services__item--overlay
+                            .services__img-wrapper
+                                img(src='./img/services-4.png' alt='')
+                            .services__info
+                                .services__title
+                                    h3 PSD TO HTML KORI
+                                .services__text
+                                    p We know that sometimes it’s something and you middle most..
+                            a.services__more-button.services__button Know more
+                                    i.icon-thin-arrow-right
+                        .services__item.services__item--40
+                            .services__item--overlay
+                            .services__img-wrapper
+                                img(src='./img/services-5.png' alt='')
+                            .services__info
+                                .services__title
+                                    h3 cool psd Design
+                                .services__text
+                                    p Our most popular service is our new virtual Receptionist you middle most..
+                            a.services__more-button.services__button Know more
+                                    i.icon-thin-arrow-right
+                        .services__item.services__item--60
+                            .services__item--overlay
+                            .services__img-wrapper
+                                img(src='./img/services-6.png' alt='')
+                            .services__info
+                                .services__title
+                                    h3 Designing is The Cool FOR
+                                .services__text
+                                    p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most..
+                            a.services__more-button.services__button Know more
+                                    i.icon-thin-arrow-right
+        section.team
+            .container
+                .row
+                    h2.section__title Small team
+                    span.section__subtitle Lorem ipsum dolor sit amet event landing template
+                    .team__content.content
+                        -
+                            let teams=[
+                                {
+                                    team__name:'Diana' +
+                                    '&nbsp;',
+                                    team__post:'/ Administrator',
+                                    team__text:'Lorem Ipsum is not simply is  an action designer random text. It has roots in a piece.',
+                                    team__img:'./img/team-1.png',
+                                    team__pinterest:'https://ru.pinterest.com/team1',
+                                    team__twitter:'https://twitter.com/team1',
+                                    team__facebook:'https://facebook.com/team1',
+                                    team__dribble:'https://dribbble.com/team1'
+                                },
+                                {
+                                    team__name:'AL RAYHAN' +
+                                    '&nbsp;',
+                                    team__post:'/ UI Designer',
+                                    team__text:'Lorem Ipsum is not simply is  an action designer random text. 22',
+                                    team__img:'./img/team-2.png',
+                                    team__pinterest:'https://ru.pinterest.com/team2',
+                                    team__twitter:'https://twitter.com/team2',
+                                    team__facebook:'https://facebook.com/team2',
+                                    team__dribble:'https://dribbble.com/team2'
+                                },
+                                {
+                                    team__name:'John' +
+                                    '&nbsp;',
+                                    team__post:'/ Manager',
+                                    team__text:'Lorem Ipsum is not simply is  an action designer random text. 33',
+                                    team__img:'./img/team-3.png',
+                                    team__pinterest:'https://ru.pinterest.com/team3',
+                                    team__twitter:'https://twitter.com/team3',
+                                    team__facebook:'https://facebook.com/team3',
+                                    team__dribble:'https://dribbble.com/team3'
+                                },
+                                {
+                                    team__name:'Brayan' +
+                                    '&nbsp;',
+                                    team__post:'/ Programmer',
+                                    team__text:'Lorem Ipsum is not simply is  an action designer random text. 44',
+                                    team__img:'./img/team-4.png',
+                                    team__pinterest:'https://ru.pinterest.com/team4',
+                                    team__twitter:'https://twitter.com/team4',
+                                    team__facebook:'https://facebook.com/team4',
+                                    team__dribble:'https://dribbble.com/team4'
+                                },
+                                {
+                                    team__name:'Valeria' +
+                                    '&nbsp;',
+                                    team__post:'/ Administrator 2',
+                                    team__text:'Lorem Ipsum is not simply is  an action designer random text. 55',
+                                    team__img:'./img/team-5.png',
+                                    team__pinterest:'https://ru.pinterest.com/team5',
+                                    team__twitter:'https://twitter.com/team5',
+                                    team__facebook:'https://facebook.com/team5',
+                                    team__dribble:'https://dribbble.com/team5'
+                                },
+                                {
+                                    team__name:'Katya' +
+                                    '&nbsp;',
+                                    team__post:'/ Manager 2',
+                                    team__text:'Lorem Ipsum is not simply is  an action designer random text. 66',
+                                    team__img:'./img/team-6.png',
+                                    team__pinterest:'https://ru.pinterest.com/team6',
+                                    team__twitter:'https://twitter.com/team6',
+                                    team__facebook:'https://facebook.com/team6',
+                                    team__dribble:'https://dribbble.com/team6'
+                                }
+                            ]
+                        each person, i in teams
+                            .team__item
+                                .team__info
+                                    .team__head
+                                        p.name!=person.team__name
+                                        span.post!=person.team__post
+                                    p.team__text=person.team__text
+                                    ul.team__social
+                                        li.team__social__item
+                                            a.team__social__link(href=person.team__pinterest)
+                                                i.icon-pinterest-p
+                                        li.team__social__item
+                                            a.team__social__link(href=person.team__twitter)
+                                                i.icon-twitter
+                                        li.team__social__item
+                                            a.team__social__link(href=person.team__facebook)
+                                                i.icon-facebook
+                                        li.team__social__item
+                                            a.team__social__link(href=person.team__dribble)
+                                                i.icon-dribble
+                                img(src=person.team__img alt='')
+        section.review
+            .container
+                .row
+                    h2.section__title What they says
+                    span.section__subtitle Lorem ipsum dolor sit amet event landing template
+                    .review__content.content
+                        -
+                            let big__slides=[
+                                {
+                                    review__name:'AL RAYHAN' +
+                                    '&nbsp;',
+                                    review__post:'/ UI/UX DESIGNER',
+                                    review__text:'Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                                    slides__src1:'./img/team-3.png',
+                                    slides__src2:'./img/team-3.png',
+                                    slides__src3:'./img/team-3.png',
+                                    slides__src4:'./img/team-3.png',
+                                    stars:'5'
+                                },
+                                {
+                                    review__name:'Brayan' +
+                                    '&nbsp;',
+                                    review__post:'/ Programmer',
+                                    review__text:'22222Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                                    slides__src1:'./img/team-2.png',
+                                    slides__src2:'./img/team-2.png',
+                                    slides__src3:'./img/team-2.png',
+                                    slides__src4:'./img/team-2.png',
+                                    stars:'3'
+                                },
+                                {
+                                    review__name:'Valeria' +
+                                    '&nbsp;',
+                                    review__post:'/ Manager',
+                                    review__text:'33333Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                                    slides__src1:'./img/team-1.png',
+                                    slides__src2:'./img/team-1.png',
+                                    slides__src3:'./img/team-1.png',
+                                    slides__src4:'./img/team-1.png',
+                                    stars:'2'
+                                }
+                            ]
+                        .big-slider
+                            each big__slide, i in big__slides
+                                .big-item
+                                    .review__item--40
+                                        .slider-one
+                                            img(src=big__slide.slides__src1, alt="")
+                                            img(src=big__slide.slides__src2, alt="")
+                                            img(src=big__slide.slides__src3, alt="")
+                                            img(src=big__slide.slides__src4, alt="")
+                                    .review__item--60
+                                        .review__text
+                                            .review__head
+                                                p.name!=big__slide.review__name
+                                                span.post!=big__slide.review__post
+                                            p.review__text__text=big__slide.review__text
+                                            .raiting
+                                                -for(let i = 0; i < big__slide.stars; i++)
+                                                    i.icon-star
+        section.company
+            .container
+                .row
+                    -
+                        let companies = [
+                            {
+                                company__logo:'./img/company-1.png'
+                            },
+                            {
+                                company__logo:'./img/company-2.png'
+                            },
+                            {
+                                company__logo:'./img/company-3.png'
+                            },
+                            {
+                                company__logo:'./img/company-4.png'
+                            },
+                            {
+                                company__logo:'./img/company-5.png'
+                            },
+                            {
+                                company__logo:'./img/company-6.png'
+                            },
+                            {
+                                company__logo:'./img/company-7.png'
+                            },
+                            {
+                                company__logo:'./img/company-8.png'
+                            },
+                            {
+                                company__logo:'./img/company-9.png'
+                            }
+                        ]
+                    each company, i in companies
+                        .company__item
+                            img(src=company.company__logo alt='')
+        section.contact
+            .container
+                .row.row--contact
+                    .contact__item.contact__item--55
+                        form.form
+                            .form__control
+                                input.form__input(type='text' required name='name' value='' autocomplete='off')
+                                label.form__label.form__label--required Name
+                            .form__control
+                                input.form__input(type='text' required name='subject' value='' autocomplete='off')
+                                label.form__label.form__label--required Subject
+                            .form__control
+                                input.form__input(type='email' required name='email' value='' autocomplete='off')
+                                label.form__label.form__label--required Email
+                            .form__control
+                                textarea.form__textarea(required)
+                                label.form__label.form__label--required Message
+                            input.form__submit(type='submit' value='Send message' name='text')
+                    .contact__item.contact__item--45
+                        .contact__info
+                            .contact__text
+                                p Adress line 1
+                                p Adress line 2
+                                p Phone: +548 945645
+                                p Fax: +456456 54546
+                            .contact__mail
+                                p Web: www.designagency.net
+                                p E-mail: info@designagency.net
+                            .contact__map
+                                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2733.096755235766!2d36.79125971596018!3d46.76298927913767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e7caec56a780d3%3A0x84eec70296b324ff!2z0LLRg9C70LjRhtGPINCf0YDQsNCy0LTQuCwg0JHQtdGA0LTRj9C90YHRjNC6LCDQl9Cw0L_QvtGA0ZbQt9GM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzExMDA!5e0!3m2!1suk!2sua!4v1521488734006" width="400" height="300" style="border:0" allowfullscreen)
+        footer.footer
+            .container.container--footer
+                h3.footer__info Follow us
+                -
+                    let footer__socials = [
+                        {
+                            social__link:'https://ru.pinterest.com',
+                            icon:'icon-pinterest-p'
+                        },
+                        {
+                            social__link:'https://twitter.com',
+                            icon:'icon-twitter'
+                        },
+                        {
+                            social__link:'https://facebook.com',
+                            icon:'icon-facebook'
+                        },
+                        {
+                            social__link:'https://dribbble.com',
+                            icon:'icon-dribble'
+                        }
+                    ]
+                ul.footer__social
+                    each social, i in footer__socials
+                        li.footer__social__item
+                            a.footer__social__link(href=social.social__link)
+                                i(class=social.icon)
+                p.footer__copyright Copyright Masum Parvej, All Rights Reserved
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        script(src='js/main.js')
+        script(src='libs/slick/slick.js')
+        script(src='libs/jquery-validation-1.17.0/dist/jquery.validate.min.js')
+        script(src='libs/magnific-popup/dist/jquery.magnific-popup.min.js')
+
+

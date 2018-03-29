@@ -1,0 +1,44 @@
+// footer
+
+.container--footer
+  display flex
+  align-items center
+  flex-direction column
+.footer
+  padding 90px 0
+  font-size 16px
+  background-color #262b2e
+  text-align center
+  color #fff
+  &__social
+    display flex
+    list-style none
+    padding 0
+    margin-bottom 40px
+  &__info
+    opacity 0.8
+    margin-bottom 20px
+  &__copyright
+    opacity 0.2
+  &__social__link
+    color #faf4f4
+    height 100%
+    width 100%
+    display flex
+    align-items center
+    justify-content center
+  &__social__item
+    background-color #8a8a8a
+    opacity 0.4
+    width 46px
+    height 40px
+    text-align center
+    line-height 40px
+    font-size 24px
+    &+&
+      margin-left 7px
+    &:hover
+      background-color #71f6eb
+      opacity 1
+      .footer__social__link
+        color #000

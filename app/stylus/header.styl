@@ -1,0 +1,151 @@
+//header
+
+.header
+  max-height 806px
+  background #eff0f2
+  padding-top 68px
+  box-sizing border-box
+  &__wrapper
+    display flex
+    justify-content space-between
+    align-items center
+  &__link
+    padding 8px
+    font-size 17px
+    line-height 16px
+    font-weight 700
+    text-shadow 0 0 2px rgba(21, 21, 22, 0.75)
+    color #000
+    border 6px solid #170f1c
+    text-transform uppercase
+    box-sizing border-box
+  &__button
+    border 2px solid rgba(0,0,0,0.5)
+    border-radius 2px
+    background transparent
+    font-size 18px
+    letter-spacing 2.16px
+    color rgba(0,0,0,0.75)
+    box-sizing border-box
+    padding 20px 48px
+    text-transform uppercase
+    line-height 13px
+  &__content
+    display flex
+    flex-direction column
+    align-items center
+    padding 45px 0
+    position relative
+  &__title
+    text-shadow 4px 8px 10px rgba(0, 0, 0, 0.24)
+    color #505050
+    font-size 31px
+    line-height 52px
+    text-transform uppercase
+    font-weight 700
+    letter-spacing 2.7px
+    padding 50px 0
+    text-align center
+    &--attention
+      background-color rgba(118, 244, 234, 0.5)
+  &__image-wrapper
+    position absolute
+    bottom 0
+    right 100px
+    display none
+  &__menu
+    display none
+.link__letter
+  color #77efe5
+  font-size 21px
+  letter-spacing 1.26px
+.sidebar
+  width 250px
+  background #FFFFFF
+  box-shadow 0 0 5px 0 #000
+  right -100%
+  top 0
+  z-index 99999
+  position fixed
+  height 100vh
+  transition .5s all ease
+  .menu__item
+    border-bottom 1px solid #505050
+    height 40px
+    line-height 40px
+    padding-left 20px
+  &__wrapper
+    position relative
+  &__close
+    position absolute
+    width 30px
+    height 20px
+    left -40px
+    top 10px
+    cursor pointer
+  &__item
+    &:nth-child(1)
+      transform translateY(8px) rotate(-45deg)
+    &:nth-child(2)
+      transform rotate(45deg)
+.menu
+  list-style none
+  color #505050
+  font-size 20px
+  width 500px
+  padding 0
+  justify-content space-between
+  &--mobile
+    display block
+  &--active
+    right 0
+  &__link
+    color #505050
+    transition 0.5s
+    &:hover
+      color #000
+.mobile
+  width 30px
+  height 20px
+  position relative
+  display block
+  cursor pointer
+  &--active
+    .mobile__item
+    &:nth-child(1)
+      transform translateY(8px) rotate(-45deg)
+    &:nth-child(2)
+      transform scale(0)
+    &:nth-child(3)
+      transform translateY(-8px) rotate(45deg)
+  &__item
+    transition .4s all ease
+    background-color #505050
+    height 4px
+    width 100%
+    position absolute
+    border-radius 2px
+    &:nth-child(1)
+      top 0px
+    &:nth-child(2)
+      top 8px
+    &:nth-child(3)
+      top 16px
+
+@media (min-width: 480px)
+  .header__title
+    font-size 42px
+@media (min-width: 720px)
+  .header__title
+    padding 150px 0
+  .header__content
+    padding 82px 0
+@media (min-width: 960px)
+  .header__mobile
+    display none
+  .header__menu
+    display flex
+  .sidebar
+    display none
+  .header__image-wrapper
+    display block

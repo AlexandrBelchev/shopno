@@ -1,0 +1,94 @@
+// contact
+
+.row--contact
+  flex-wrap wrap
+.contact
+  background url("../img/contact-bg.png") no-repeat
+  background-size cover
+  &__item
+    padding 36px 30px 19px 30px
+    box-shadow 0 0 3px rgba(21, 21, 21, 0.16)
+    background-color rgba(2, 22, 35, 0.71)
+    box-sizing border-box
+    width 100%
+    margin-bottom 10px
+  &__info
+    text-align left
+    color rgba(255,255,255,0.7)
+  &__mail
+    margin-top 30px
+  &__text, &__mail
+    p+p
+      margin-top 5px
+  &__map
+    margin-top 23px
+    iframe
+      width 100%
+      height 225px
+.form
+  font-size 15px
+  text-align left
+  color #fff
+  &__label
+    position absolute
+    left 0
+    top 10px
+    opacity .6
+    transition 0.4s all ease
+    &--required
+      &:after
+        content '*'
+  &__submit
+    border none
+    margin-top 35px
+    padding 20px 37px
+    color rgba(0,0,0,0.7)
+    border-radius 2px
+    background-color #6eeee4
+    font-size 18px
+    letter-spacing 2.16px
+    line-height 13px
+    text-transform uppercase
+    cursor pointer
+  &__input,
+  &__textarea
+    background transparent
+    border none
+    resize none
+    border-bottom 1px solid rgba(255,255,255,0.7)
+    width 100%
+    color #fff
+    font-size 16px
+  &__input:focus,
+  &__textarea:focus,
+  &__input:valid,
+  &__textarea:valid,
+  &__input.error,
+  &__textarea.error
+    outline none
+    ~ .form__label
+      transform translateY(-20px)
+      font-size 12px
+  &__input
+    height 35px
+  &__textarea
+    padding 0
+    height 115px
+  &__control
+    position relative
+    & + &
+      margin-top 20px
+    .form__textarea ~ .form__label
+      top 5px
+label.error
+  color red
+@media (min-width: 960px)
+  .row--contact
+    flex-direction row
+    justify-content space-between
+  .contact__item
+    margin 0
+    &--55
+      width calc(55% - 13px)
+    &--45
+      width calc(45% - 13px)

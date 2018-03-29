@@ -1,0 +1,68 @@
+// review
+
+.review
+  background-color #f9fbfb
+  &__item--40
+    width 100%
+    display flex
+    justify-content center
+    padding-bottom 70px
+  &__item--60
+    width 100%
+    display flex
+    align-items center
+  .slick-arrow
+    position absolute
+    top 46%
+    cursor pointer
+    z-index 9999
+    background-color #fff
+    color rgba(0,0,0,0.3)
+    border-radius 3px
+    padding 15px
+    box-shadow 3px 7px 11px rgba(20, 20, 21, 0.05)
+    &:hover
+      background-color #71f6eb
+  .nav-prev
+    left 0
+  .nav-next
+    right 0px
+.review__text
+  padding 10px
+  background-color #eaebed
+  line-height 27px
+  &__text
+    margin 30px 0 33px 0
+.icon-star
+  color #f2da3b
+  & + &
+    margin-left 6px
+.review__head
+  display flex
+  justify-content center
+  align-items center
+@media (min-width: 720px)
+  .review__text
+    82px 81px 60px 86px
+@media (min-width: 960px)
+  .review
+    &__text
+      padding 100px 20px 70px 20px
+    &__item--40
+      width calc(40% - 10px)
+      margin-bottom 0
+      padding-bottom 0
+    &__item--60
+      width calc(60% - 10px)
+  .review
+    .slick-arrow
+      bottom 0
+      top auto
+    .nav-prev
+      right 75px
+      left auto
+  .slick-arrow
+    top 72%
+@media (min-width: 1200px)
+  .review__text
+    padding 100px 81px 70px 86px

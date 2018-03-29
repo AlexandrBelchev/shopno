@@ -1,0 +1,107 @@
+.review {
+  background-color: #f9fbfb;
+}
+.review__item--40 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 70px;
+}
+.review__item--60 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.review .slick-arrow {
+  position: absolute;
+  top: 46%;
+  cursor: pointer;
+  z-index: 9999;
+  background-color: #fff;
+  color: rgba(0,0,0,0.3);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 15px;
+  -webkit-box-shadow: 3px 7px 11px rgba(20,20,21,0.05);
+          box-shadow: 3px 7px 11px rgba(20,20,21,0.05);
+}
+.review .slick-arrow:hover {
+  background-color: #71f6eb;
+}
+.review .nav-prev {
+  left: 0;
+}
+.review .nav-next {
+  right: 0px;
+}
+.review__text {
+  padding: 10px;
+  background-color: #eaebed;
+  line-height: 27px;
+}
+.review__text__text {
+  margin: 30px 0 33px 0;
+}
+.icon-star {
+  color: #f2da3b;
+}
+.icon-star + .icon-star {
+  margin-left: 6px;
+}
+.review__head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 960px) {
+  .review__text {
+    padding: 100px 20px 70px 20px;
+  }
+  .review__item--40 {
+    width: -webkit-calc(40% - 10px);
+    width: calc(40% - 10px);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .review__item--60 {
+    width: -webkit-calc(60% - 10px);
+    width: calc(60% - 10px);
+  }
+  .review .slick-arrow {
+    bottom: 0;
+    top: auto;
+  }
+  .review .nav-prev {
+    right: 75px;
+    left: auto;
+  }
+  .slick-arrow {
+    top: 72%;
+  }
+}
+@media (min-width: 1200px) {
+  .review__text {
+    padding: 100px 81px 70px 86px;
+  }
+}

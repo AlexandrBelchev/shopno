@@ -1,0 +1,4 @@
+mixin menu
+    each menu, i in menus
+        li.menu__item
+            a.menu__link(href=menu.link)!=menu.text

@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.section__title {
+  font-size: 28px;
+  opacity: 0.9;
+  letter-spacing: 2.28px;
+  text-transform: uppercase;
+}
+.section__subtitle {
+  opacity: 0.62;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+}
+section {
+  padding: 50px 0;
+}
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-top: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.name {
+  color: #272727;
+  font-size: 16px;
+  font-weight: 700;
+}
+.post {
+  color: #767070;
+  font-style: italic;
+}
+@media (min-width: 320px) {
+  .container {
+    width: 290px;
+  }
+}
+@media (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media (min-width: 720px) {
+  .container {
+    width: 690px;
+  }
+  .section__title {
+    font-size: 38px;
+    font-weight: bold;
+  }
+  .content {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 930px;
+  }
+  .content {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section {
+    padding: 120px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .name {
+    font-size: 20px;
+  }
+}

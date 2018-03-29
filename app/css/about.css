@@ -1,0 +1,44 @@
+.about__item {
+  width: 100%;
+  text-align: left;
+  line-height: 28px;
+}
+.about__item+.about__item {
+  margin-top: 20px;
+}
+.about__item:first-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about__item__title {
+  text-transform: uppercase;
+  color: #000;
+  opacity: 0.75;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+.about__item__text {
+  color: #000;
+  opacity: 0.7;
+  font-size: 16px;
+  font-family: 'Raleway', serif;
+  margin-bottom: 30px;
+}
+@media (min-width: 960px) {
+  .about__item {
+    width: -webkit-calc(50% - 50px);
+    width: calc(50% - 50px);
+  }
+  .about__item+.about__item {
+    margin-top: 0px;
+  }
+}
